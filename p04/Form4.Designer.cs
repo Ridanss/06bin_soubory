@@ -32,6 +32,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.buttonExecute = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -41,7 +42,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 121);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "1\r\n2\r\n3\r\n4\r\n5\r\n6\r\n7\r\n8\r\n9";
+            this.textBox1.Text = "9\r\n2\r\n3\r\n4\r\n5\r\n6\r\n7\r\n8\r\n1";
             // 
             // listBox1
             // 
@@ -53,7 +54,7 @@
             // 
             // buttonExecute
             // 
-            this.buttonExecute.Location = new System.Drawing.Point(155, 60);
+            this.buttonExecute.Location = new System.Drawing.Point(149, 60);
             this.buttonExecute.Name = "buttonExecute";
             this.buttonExecute.Size = new System.Drawing.Size(75, 23);
             this.buttonExecute.TabIndex = 2;
@@ -64,16 +65,25 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(213, 89);
+            this.listBox2.Location = new System.Drawing.Point(205, 247);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(100, 121);
             this.listBox2.TabIndex = 3;
+            // 
+            // listBox3
+            // 
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.Location = new System.Drawing.Point(484, 247);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(100, 121);
+            this.listBox3.TabIndex = 4;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.buttonExecute);
             this.Controls.Add(this.listBox1);
@@ -91,6 +101,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button buttonExecute;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox3;
     }
 }
 
