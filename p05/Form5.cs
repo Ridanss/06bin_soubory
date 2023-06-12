@@ -29,14 +29,28 @@ namespace p05
                 {
                     while (!sr.EndOfStream)
                     {
-                        line = sr.ReadLine();
-                        data = line.Split(';');
-                        br.Write(int.Parse(data[0]));
-                        br.Write(data[1]);
-                        br.Write(data[2]);
-                        br.Write(char.Parse(data[3]));
-                        br.Write(int.Parse(data[4]));
-                        br.Write(int.Parse(data[5]));
+                        try
+                        {
+                            line = sr.ReadLine();
+                            data = line.Split(';');
+                            int a = int.Parse(data[0]);
+                            string b = data[1];
+                            string c = data[2];
+                            char d = char.Parse(data[3]);
+                            int f = int.Parse(data[4]);
+                            int g = int.Parse(data[5]);
+
+                            br.Write(a);
+                            br.Write(b);
+                            br.Write(c);
+                            br.Write(d);
+                            br.Write(f);
+                            br.Write(g);
+                        }
+                        catch (FormatException)
+                        {
+
+                        }
                     }
                 }
             }
